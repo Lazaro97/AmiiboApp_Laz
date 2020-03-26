@@ -28,7 +28,8 @@ class DataVC: UIViewController {
     @IBOutlet weak var amiiboSeriesHolderLabel: UILabel!
     @IBOutlet weak var gameSeriesHolderLabel: UILabel!
     @IBOutlet weak var releaseDate: UILabel!
-        
+    
+    
     @IBOutlet weak var addToFavortiesBtn: UIButton!
     
     @IBAction func AddToFavorites(_ sender: Any) {
@@ -62,4 +63,3 @@ class DataVC: UIViewController {
         }
     }
  }
-//TEST

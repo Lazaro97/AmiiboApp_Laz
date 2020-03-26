@@ -11,15 +11,13 @@ import UIKit
 
 class FavoritesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    //TEST 
-    
-    
     @IBOutlet weak var FavTableView: UITableView!
     var favorites: [AmiiboForView] = [] {
-        didSet {
-            FavTableView.reloadData()
+        didSet{
+            self.FavTableView.reloadData()
         }
     } 
+  
     
     override func viewDidLoad() {
           super.viewDidLoad()
@@ -28,9 +26,7 @@ class FavoritesVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
           FavTableView.delegate     = self
           FavTableView.dataSource   = self
       }
-    
-    //GET FAV FUNCTION MUST CREATE
-    
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return favorites.count
@@ -39,8 +35,14 @@ class FavoritesVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavCell") as! FavoritesCell
         let favorite = favorites[indexPath.row]
+        cell.nameLabel.text = favorite.name!
+        
+        if let url = URL(string: favorite.imageUrl ?? "nil") {
+            cell.amiiboImg?.loadImage(from: url)
+        }
         return cell
-    }
+}
+
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let favorite = favorites[indexPath.row]

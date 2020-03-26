@@ -11,8 +11,8 @@ import UIKit
 
 class FavoritesCell : UITableViewCell {
     
-    @IBOutlet weak var nameLabel: CustomImageView!
-    @IBOutlet weak var amiiboImg: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var amiiboImg: CustomImageView?
     
     override func awakeFromNib() {
         super.awakeFromNib()
