@@ -12,7 +12,8 @@ protocol DataVCDelegate: class {
     func didAddToFavorites(_ amiibo: AmiiboForView?)
 }
 
-class DataVC: UIViewController {
+class DataVC: UIViewController, UITabBarDelegate, UITabBarControllerDelegate {
+    
     weak var delegate: DataVCDelegate?
     var amiibo: AmiiboForView?
     
@@ -28,8 +29,6 @@ class DataVC: UIViewController {
     @IBOutlet weak var amiiboSeriesHolderLabel: UILabel!
     @IBOutlet weak var gameSeriesHolderLabel: UILabel!
     @IBOutlet weak var releaseDate: UILabel!
-    
-    
     @IBOutlet weak var addToFavortiesBtn: UIButton!
     
     @IBAction func AddToFavorites(_ sender: Any) {
@@ -37,16 +36,14 @@ class DataVC: UIViewController {
         delegate?.didAddToFavorites(amiibo)
     }
     
-    @IBOutlet weak var addToFav: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor       = .white
         setupData()
-        redView.layer.cornerRadius = 20
+        view.backgroundColor                = .white
+        redView.layer.cornerRadius          = 20
         dataViewBoderOne.layer.cornerRadius = 10
 }
-    
     
     func setupData() {
          if let amiibo = amiibo,

@@ -295,15 +295,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sm6-Ty-PkB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Information" id="led-90-NCH">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="LeR-yn-iaB">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Information" id="led-90-NCH"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="addToFav" destination="LeR-yn-iaB" id="9Gg-dG-djn"/>
                         <outlet property="addToFavortiesBtn" destination="HfP-Fs-1zt" id="qeR-gZ-36e"/>
                         <outlet property="amiiboSeriesHolderLabel" destination="sa4-15-YAn" id="pvh-6B-MEE"/>
                         <outlet property="amiiboSeriesLabel" destination="86F-xw-SfU" id="ctR-KG-3jT"/>
@@ -373,7 +368,7 @@
             </objects>
             <point key="canvasLocation" x="1974" y="-550"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
         <scene sceneID="hGU-HC-4U3">
             <objects>
                 <viewController id="8Gh-RI-tEs" customClass="FavoritesVC" customModule="Amiibo" customModuleProvider="target" sceneMemberID="viewController">
@@ -437,14 +432,15 @@
                         <viewLayoutGuide key="safeArea" id="AId-rL-br9"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Nua-CP-sex"/>
-                    <navigationItem key="navigationItem" id="GOt-L3-OG5"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="GOt-L3-OG5"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="FavTableView" destination="vzF-pG-rGP" id="JVV-dL-Rtj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukN-JW-i7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2797.5999999999999" y="179.55665024630542"/>
+            <point key="canvasLocation" x="1974" y="169"/>
         </scene>
     </scenes>
     <resources>

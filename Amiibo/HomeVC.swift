@@ -37,7 +37,7 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
          navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 
-
+    
       override func viewWillDisappear(_ animated: Bool) {
           super.viewWillDisappear(animated)
           navigationController?.setNavigationBarHidden(false, animated: animated)
@@ -67,9 +67,9 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
         func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
             
-            searchBar.layer.borderWidth = 10
+            searchBar.layer.borderWidth  = 10
             searchBar.layer.cornerRadius = 10
-            searchBar.layer.borderColor = UIColor.white.cgColor
+            searchBar.layer.borderColor  = UIColor.white.cgColor
             
             timer?.invalidate()
             timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false, block: { (_) in
@@ -118,10 +118,10 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
    
     
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
         amiiboToPass = amiiboList[indexPath.item]
         performSegue(withIdentifier: "toDataVC", sender: self)
-        
     }
 
     
@@ -139,6 +139,7 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         return CGSize(width: cellDimension, height: cellDimension)
     }
 }
+
 
 extension HomeVC: DataVCDelegate {
     func didAddToFavorites(_ amiibo: AmiiboForView?) {
