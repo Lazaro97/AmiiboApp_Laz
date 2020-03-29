@@ -272,9 +272,17 @@
                                     <constraint firstAttribute="width" constant="343" id="xOy-ay-eS2"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfP-Fs-1zt">
-                                <rect key="frame" x="296" y="98" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfP-Fs-1zt">
+                                <rect key="frame" x="301" y="98" width="58" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="7CD-qm-P2h"/>
+                                    <constraint firstAttribute="width" constant="58" id="yES-cb-voI"/>
+                                </constraints>
+                                <color key="tintColor" red="0.44251787660000003" green="0.7515299916" blue="0.27438783649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button" image="Star">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
                                 <connections>
                                     <action selector="AddToFavorites:" destination="4KM-45-0Ma" eventType="touchUpInside" id="1eT-vn-X8P"/>
                                 </connections>
@@ -282,16 +290,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="HfP-Fs-1zt" firstAttribute="top" secondItem="Sm6-Ty-PkB" secondAttribute="top" constant="10" id="1d5-Ts-xcL"/>
-                            <constraint firstItem="HfP-Fs-1zt" firstAttribute="leading" secondItem="Sm6-Ty-PkB" secondAttribute="leading" constant="296" id="1f2-G3-FNd"/>
+                            <constraint firstItem="wp3-G9-Vri" firstAttribute="top" secondItem="HfP-Fs-1zt" secondAttribute="bottom" constant="277" id="8h3-kk-yJd"/>
+                            <constraint firstItem="HfP-Fs-1zt" firstAttribute="leading" secondItem="Sm6-Ty-PkB" secondAttribute="leading" constant="301" id="BNo-WV-8oO"/>
+                            <constraint firstItem="HfP-Fs-1zt" firstAttribute="top" secondItem="Sm6-Ty-PkB" secondAttribute="top" constant="10" id="DMl-wf-OhT"/>
                             <constraint firstAttribute="bottom" secondItem="wp3-G9-Vri" secondAttribute="bottom" id="F1y-F8-tmn"/>
                             <constraint firstItem="fCr-iD-L5L" firstAttribute="top" secondItem="Sm6-Ty-PkB" secondAttribute="top" constant="10" id="MwY-X6-0Td"/>
                             <constraint firstItem="fCr-iD-L5L" firstAttribute="leading" secondItem="Sm6-Ty-PkB" secondAttribute="leading" constant="16" id="Q7D-7W-dQZ"/>
                             <constraint firstItem="wp3-G9-Vri" firstAttribute="top" secondItem="fCr-iD-L5L" secondAttribute="bottom" constant="28" id="QI1-hg-R36"/>
-                            <constraint firstItem="wp3-G9-Vri" firstAttribute="top" secondItem="HfP-Fs-1zt" secondAttribute="bottom" constant="298" id="RUt-ON-mMA"/>
-                            <constraint firstItem="Sm6-Ty-PkB" firstAttribute="trailing" secondItem="HfP-Fs-1zt" secondAttribute="trailing" constant="33" id="jyr-jy-ObN"/>
                             <constraint firstItem="wp3-G9-Vri" firstAttribute="trailing" secondItem="Sm6-Ty-PkB" secondAttribute="trailing" id="lmq-Q0-GCa"/>
                             <constraint firstItem="wp3-G9-Vri" firstAttribute="leading" secondItem="Sm6-Ty-PkB" secondAttribute="leading" id="t2n-KC-yF5"/>
+                            <constraint firstItem="Sm6-Ty-PkB" firstAttribute="trailing" secondItem="HfP-Fs-1zt" secondAttribute="trailing" constant="16" id="y6C-he-JDc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sm6-Ty-PkB"/>
                     </view>
@@ -351,7 +359,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BHh-Cs-Psj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="0ln-LG-rvH"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="house.fill" catalog="system" id="Mp2-N2-t1D">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="person" catalog="system" id="Mp2-N2-t1D">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -376,7 +384,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vzF-pG-rGP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vzF-pG-rGP">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -392,16 +400,16 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epH-hG-Lpu">
-                                                    <rect key="frame" x="22.999999999999996" y="37" width="41.666666666666657" height="29"/>
+                                                    <rect key="frame" x="23" y="37" width="193" height="29"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Bv-Vg-hnt" customClass="CustomImageView" customModule="Amiibo" customModuleProvider="target">
-                                                    <rect key="frame" x="233" y="9" width="98" height="85"/>
+                                                    <rect key="frame" x="262" y="9" width="98" height="85"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="98" id="1uL-8X-GYH"/>
-                                                        <constraint firstAttribute="height" constant="85" id="7tl-lQ-qXP"/>
+                                                        <constraint firstAttribute="width" constant="98" id="N7t-Fx-rUi"/>
+                                                        <constraint firstAttribute="height" constant="85" id="c6g-cH-Oh7"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -409,9 +417,9 @@
                                                 <constraint firstItem="epH-hG-Lpu" firstAttribute="leading" secondItem="g9J-ig-hlh" secondAttribute="leadingMargin" constant="8" id="5fz-qO-dOc"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="epH-hG-Lpu" secondAttribute="bottom" constant="26" id="Lwb-4G-JnR"/>
                                                 <constraint firstItem="epH-hG-Lpu" firstAttribute="top" secondItem="g9J-ig-hlh" secondAttribute="topMargin" constant="26" id="dhM-5b-JQj"/>
-                                                <constraint firstItem="2Bv-Vg-hnt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="epH-hG-Lpu" secondAttribute="trailing" constant="8" symbolic="YES" id="odx-x4-Lv5"/>
-                                                <constraint firstAttribute="trailing" secondItem="2Bv-Vg-hnt" secondAttribute="trailing" constant="44" id="sgY-go-SzG"/>
-                                                <constraint firstItem="2Bv-Vg-hnt" firstAttribute="centerY" secondItem="epH-hG-Lpu" secondAttribute="centerY" id="yzp-3r-3Q2"/>
+                                                <constraint firstItem="2Bv-Vg-hnt" firstAttribute="leading" secondItem="epH-hG-Lpu" secondAttribute="trailing" constant="46" id="i7n-Zr-gJW"/>
+                                                <constraint firstItem="2Bv-Vg-hnt" firstAttribute="top" secondItem="g9J-ig-hlh" secondAttribute="top" constant="9" id="o0Q-ai-rfJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="2Bv-Vg-hnt" secondAttribute="trailing" constant="15" id="w8M-NG-w9v"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -431,7 +439,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AId-rL-br9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Nua-CP-sex"/>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Nua-CP-sex">
+                        <color key="badgeColor" red="0.9019861817" green="4.7657070469999999e-07" blue="0.070711366829999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Favorites" id="GOt-L3-OG5"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -440,14 +450,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukN-JW-i7t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1974" y="169"/>
+            <point key="canvasLocation" x="1973.5999999999999" y="168.4729064039409"/>
         </scene>
     </scenes>
     <resources>
         <image name="0_amiibo_logo" width="345" height="79"/>
         <image name="Mario-amiibo-Figure" width="768" height="768"/>
+        <image name="Star" width="426" height="414"/>
         <image name="arrows-151433_640" width="613" height="640"/>
         <image name="house" catalog="system" width="64" height="54"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="person" catalog="system" width="64" height="58"/>
     </resources>
 </document>

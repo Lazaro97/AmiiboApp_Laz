@@ -53,7 +53,7 @@ class DataVC: UIViewController, UITabBarDelegate, UITabBarControllerDelegate {
             nameLabel.text            = amiibo.name
             seriesLabel.text          = amiibo.gameSeries
             amiiboSeriesLabel.text    = amiibo.series
-            releaseDateLabelReal.text = "NA:" + amiibo.releaseDate!            
+            releaseDateLabelReal.text = "NA:" + (amiibo.releaseDate ?? "nil")            
         }
          else {
             print ("Error")

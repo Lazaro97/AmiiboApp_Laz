@@ -11,46 +11,20 @@ import UIKit
 
 class FavoritesVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITabBarControllerDelegate {
      
-    @IBOutlet weak var FavTableView: UITableView!
-      
+    @IBOutlet weak var FavTableView: UITableView?
+          
     var favorites: [AmiiboForView] = [] {
-            didSet {
-                func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-                        //ask where it is first tab bar item
-                        if self.tabBarController?.selectedIndex == 0 {
-                            self.FavTableView.reloadData()
-                    }
-                        else if tabBarController?.selectedIndex == 1 {
-                            self.FavTableView.reloadData()
-                    }
-                }
-            }
+        didSet {
+            FavTableView?.reloadData()
         }
-    
-//    var favorites: [AmiiboForView] = [] {
-//        didSet {
-//            return    //  self.FavTableView.reloadData()
-//        }
-//    }
-//
-//    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-//
-//        //ask where it is first tab bar item
-//        if self.tabBarController?.selectedIndex == 0 {
-//            // your action, e.g.:
-//            self.FavTableView.reloadData()
-//        }
-//    }
-    
-    
+    }
     override func viewDidLoad() {
           super.viewDidLoad()
           navigationItem.title      = "Fav"
-          self.tabBarItem.title     = "Favorites"
-          FavTableView.delegate     = self
-          FavTableView.dataSource   = self
-        self.tabBarController?.delegate = self
-
+         self.tabBarItem.title     = "Favorites"
+         FavTableView?.delegate     = self
+         FavTableView?.dataSource   = self
+         self.tabBarController?.delegate = self
 }
    
     
