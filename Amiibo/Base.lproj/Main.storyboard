@@ -126,8 +126,9 @@
                                     <action selector="ReoladData:" destination="aEH-8b-a5y" eventType="touchUpInside" id="wQn-mZ-sKK"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0_amiibo_logo" translatesAutoresizingMaskIntoConstraints="NO" id="JMZ-vx-MCq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO#" translatesAutoresizingMaskIntoConstraints="NO" id="JMZ-vx-MCq">
                                 <rect key="frame" x="15" y="32" width="345" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                         </subviews>
@@ -177,10 +178,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wp3-G9-Vri">
                                 <rect key="frame" x="0.0" y="426" width="375" height="386"/>
                                 <subviews>
-                                    <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KoQ-d8-cwU">
-                                        <rect key="frame" x="8" y="8" width="359" height="336"/>
-                                        <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARIO" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pm1-al-sGQ">
                                         <rect key="frame" x="8" y="31.000000000000004" width="359" height="32.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="28"/>
@@ -244,12 +241,8 @@
                                     <constraint firstItem="86F-xw-SfU" firstAttribute="top" secondItem="sa4-15-YAn" secondAttribute="bottom" constant="2" id="OEk-Qj-15f"/>
                                     <constraint firstAttribute="trailing" secondItem="y7l-M4-dk0" secondAttribute="trailing" constant="8" id="QTp-2e-eMu"/>
                                     <constraint firstAttribute="trailing" secondItem="dsQ-du-nxy" secondAttribute="trailing" constant="8" id="TOx-4m-wkt"/>
-                                    <constraint firstAttribute="trailing" secondItem="KoQ-d8-cwU" secondAttribute="trailing" constant="8" id="XOO-XH-3Wj"/>
                                     <constraint firstAttribute="trailing" secondItem="sa4-15-YAn" secondAttribute="trailing" constant="8" id="bfL-oT-jaH"/>
-                                    <constraint firstItem="sa4-15-YAn" firstAttribute="top" secondItem="KoQ-d8-cwU" secondAttribute="bottom" constant="10.33" id="c6Q-pd-BUO"/>
-                                    <constraint firstItem="KoQ-d8-cwU" firstAttribute="leading" secondItem="wp3-G9-Vri" secondAttribute="leading" constant="8" id="cK2-iP-abb"/>
                                     <constraint firstItem="HOr-1L-QUz" firstAttribute="top" secondItem="y7l-M4-dk0" secondAttribute="bottom" constant="2" id="cZp-Hg-VU6"/>
-                                    <constraint firstItem="KoQ-d8-cwU" firstAttribute="top" secondItem="wp3-G9-Vri" secondAttribute="top" constant="8" id="cbA-Wx-YS3"/>
                                     <constraint firstItem="dsQ-du-nxy" firstAttribute="top" secondItem="wp3-G9-Vri" secondAttribute="top" constant="8" id="fEg-YI-czf"/>
                                     <constraint firstAttribute="trailing" secondItem="86F-xw-SfU" secondAttribute="trailing" constant="8" id="gFp-h2-yk3"/>
                                     <constraint firstItem="oH9-4E-IMf" firstAttribute="leading" secondItem="wp3-G9-Vri" secondAttribute="leading" constant="8" id="gZm-8V-TKc"/>
@@ -273,14 +266,14 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfP-Fs-1zt">
-                                <rect key="frame" x="301" y="98" width="58" height="51"/>
+                                <rect key="frame" x="309" y="118" width="50" height="51"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="7CD-qm-P2h"/>
-                                    <constraint firstAttribute="width" constant="58" id="yES-cb-voI"/>
+                                    <constraint firstAttribute="height" constant="51" id="tQm-eY-sTa"/>
                                 </constraints>
                                 <color key="tintColor" red="0.44251787660000003" green="0.7515299916" blue="0.27438783649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button" image="Star">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="Star">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
@@ -290,16 +283,15 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="wp3-G9-Vri" firstAttribute="top" secondItem="HfP-Fs-1zt" secondAttribute="bottom" constant="277" id="8h3-kk-yJd"/>
-                            <constraint firstItem="HfP-Fs-1zt" firstAttribute="leading" secondItem="Sm6-Ty-PkB" secondAttribute="leading" constant="301" id="BNo-WV-8oO"/>
-                            <constraint firstItem="HfP-Fs-1zt" firstAttribute="top" secondItem="Sm6-Ty-PkB" secondAttribute="top" constant="10" id="DMl-wf-OhT"/>
                             <constraint firstAttribute="bottom" secondItem="wp3-G9-Vri" secondAttribute="bottom" id="F1y-F8-tmn"/>
                             <constraint firstItem="fCr-iD-L5L" firstAttribute="top" secondItem="Sm6-Ty-PkB" secondAttribute="top" constant="10" id="MwY-X6-0Td"/>
                             <constraint firstItem="fCr-iD-L5L" firstAttribute="leading" secondItem="Sm6-Ty-PkB" secondAttribute="leading" constant="16" id="Q7D-7W-dQZ"/>
                             <constraint firstItem="wp3-G9-Vri" firstAttribute="top" secondItem="fCr-iD-L5L" secondAttribute="bottom" constant="28" id="QI1-hg-R36"/>
+                            <constraint firstItem="HfP-Fs-1zt" firstAttribute="trailing" secondItem="fCr-iD-L5L" secondAttribute="trailing" id="fqV-a4-X3J"/>
+                            <constraint firstItem="HfP-Fs-1zt" firstAttribute="leading" secondItem="Sm6-Ty-PkB" secondAttribute="leading" constant="309" id="gNK-nK-f5k"/>
                             <constraint firstItem="wp3-G9-Vri" firstAttribute="trailing" secondItem="Sm6-Ty-PkB" secondAttribute="trailing" id="lmq-Q0-GCa"/>
                             <constraint firstItem="wp3-G9-Vri" firstAttribute="leading" secondItem="Sm6-Ty-PkB" secondAttribute="leading" id="t2n-KC-yF5"/>
-                            <constraint firstItem="Sm6-Ty-PkB" firstAttribute="trailing" secondItem="HfP-Fs-1zt" secondAttribute="trailing" constant="16" id="y6C-he-JDc"/>
+                            <constraint firstItem="HfP-Fs-1zt" firstAttribute="top" secondItem="Sm6-Ty-PkB" secondAttribute="top" constant="30" id="tEJ-Lh-BIY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sm6-Ty-PkB"/>
                     </view>
@@ -312,7 +304,6 @@
                         <outlet property="amiiboSeriesLabel" destination="86F-xw-SfU" id="ctR-KG-3jT"/>
                         <outlet property="avatarImage" destination="fCr-iD-L5L" id="Nmz-e3-Wuu"/>
                         <outlet property="dataView" destination="V6Q-qR-tBm" id="qO6-OQ-F3Y"/>
-                        <outlet property="dataViewBoderOne" destination="KoQ-d8-cwU" id="veb-o9-MQS"/>
                         <outlet property="gameSeriesHolderLabel" destination="y7l-M4-dk0" id="D00-O8-8xP"/>
                         <outlet property="nameHolderLabel" destination="dsQ-du-nxy" id="zbg-8P-Xs5"/>
                         <outlet property="nameLabel" destination="Pm1-al-sGQ" id="1tv-VE-HM3"/>
@@ -454,7 +445,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="0_amiibo_logo" width="345" height="79"/>
+        <image name="LOGO#" width="993" height="321"/>
         <image name="Mario-amiibo-Figure" width="768" height="768"/>
         <image name="Star" width="426" height="414"/>
         <image name="arrows-151433_640" width="613" height="640"/>

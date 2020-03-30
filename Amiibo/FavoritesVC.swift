@@ -20,11 +20,12 @@ class FavoritesVC: UIViewController, UITableViewDelegate, UITableViewDataSource,
     }
     override func viewDidLoad() {
           super.viewDidLoad()
-          navigationItem.title      = "Fav"
-         self.tabBarItem.title     = "Favorites"
+         self.tabBarItem.title      = "Favorites"
          FavTableView?.delegate     = self
          FavTableView?.dataSource   = self
          self.tabBarController?.delegate = self
+         self.tabBarController?.navigationItem.title = "Favorites"
+
 }
    
     

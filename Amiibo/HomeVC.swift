@@ -13,9 +13,11 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     @IBOutlet weak var SearchController: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var listButton: UIButton!
+    
     @IBAction func ReoladData(_ sender: Any) {
         AmiiboData()
         self.collectionView.reloadData()
+        //MARK: RELOADING THE DATA HERE MESS US THE FAVVC
     }
     
     var amiiboList =  [AmiiboForView]()
@@ -72,7 +74,7 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
             searchBar.layer.borderColor  = UIColor.white.cgColor
             
             timer?.invalidate()
-            timer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false, block: { (_) in
+            timer = Timer.scheduledTimer(withTimeInterval: 0.6, repeats: false, block: { (_) in
             
             let anonymousFunctions = { (fetchedAmiiboList: [Amiibo]) in
                 DispatchQueue.main.async {

@@ -17,7 +17,6 @@ class DataVC: UIViewController, UITabBarDelegate, UITabBarControllerDelegate {
     weak var delegate: DataVCDelegate?
     var amiibo: AmiiboForView?
     
-    @IBOutlet weak var dataViewBoderOne: UIView!
     @IBOutlet var dataView: UIView!
     @IBOutlet weak var avatarImage: CustomImageView?
     @IBOutlet weak var nameLabel: UILabel!
@@ -42,7 +41,6 @@ class DataVC: UIViewController, UITabBarDelegate, UITabBarControllerDelegate {
         setupData()
         view.backgroundColor                = .white
         redView.layer.cornerRadius          = 20
-        dataViewBoderOne.layer.cornerRadius = 10
 }
     
     func setupData() {
