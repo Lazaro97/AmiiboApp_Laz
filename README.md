@@ -18,5 +18,5 @@ Inspired by [Sean Allen](https://github.com/seanallen0400), [Take Home Project](
 
 ## Screenshots
 
-<img src="https://lazaroambrosioo.com/wp-content/uploads/2020/04/Home@2x-1.png" width="350">
+<img src="https://lazaroambrosioo.com/wp-content/uploads/2020/04/Home@2x-1.png" width="500">
 <img src="https://user-images.githubusercontent.com/6517225/74361260-46d2a380-4dcf-11ea-9476-f7e28baceae9.png" width="350"> |  <img src="https://user-images.githubusercontent.com/6517225/74361251-42a68600-4dcf-11ea-85f4-a44169619827.png" width="350">
