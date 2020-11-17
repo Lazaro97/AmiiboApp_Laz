@@ -1,22 +1,14 @@
 ## Amiibo App Collection 
 
-The GitHub Followers allows you to search for a github user, see its followers, their user info and add them to your favorites.
+The Amiibo Collection app is intended to keep Nintendo fans updated with the latest Amiibo figures. Through this app, users are able to find the latest information regarding the Amiibo of thier choice. The app also provides users the opptunity to favorite Amiibos they are potentially interested in adding to thier collection.
 
 ## Getting Started
 
 Clone the project and run in Xcode.
 
-## Authors
-
-**Ziv Zalzstein** - [Github Profile](https://github.com/zivz)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## Acknowledgments
-
-Inspired by [Sean Allen](https://github.com/seanallen0400), [Take Home Project](https://seanallen.teachable.com/)
 
 ## Screenshots
 
 <img src="https://lazaroambrosioo.com/wp-content/uploads/2020/04/Home@2x-1.png" width="500">
-<img src="https://user-images.githubusercontent.com/6517225/74361260-46d2a380-4dcf-11ea-9476-f7e28baceae9.png" width="350"> |  <img src="https://user-images.githubusercontent.com/6517225/74361251-42a68600-4dcf-11ea-85f4-a44169619827.png" width="350">
+<img src="https://lazaroambrosioo.com/wp-content/uploads/2020/04/Secound@2x-768x576.png" width="500">  
+<img src="https://lazaroambrosioo.com/wp-content/uploads/2020/04/Group-7-2-1024x741.png" width="500">
