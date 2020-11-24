@@ -1,6 +1,6 @@
 ## Amiibo App Collection 
 
-The Amiibo Collection app is intended to keep Nintendo fans updated with the latest Amiibo figures. Through this app, users are able to find the latest information regarding the Amiibo of thier choice. The app also provides users the opptunity to favorite Amiibos they are potentially interested in adding to thier collection.
+The Amiibo Collection app is intended to keep Nintendo fans updated with the latest Amiibo figures. Through this app, users are able to find the latest information regarding the Amiibo of their choice. The app also provides users the opportunity to favorite Amiibos they are potentially interested in adding to their collection.
 
 ## Getting Started
 
